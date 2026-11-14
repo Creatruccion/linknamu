@@ -23,19 +23,19 @@ export const links: LinkItem[] = [
   {
     id: "github",
     emoji: "🐙",
-    title: "깃허브",
+    title: "GitHub",
     url: "https://github.com/Creatruccion",
   },
   {
     id: "naver-blog",
     emoji: "✒️",
-    title: "네이버 블로그",
+    title: "Naver Blog",
     url: "https://m.blog.naver.com/ingemo_technologia",
   },
   {
     id: "instagram",
     emoji: "😎",
-    title: "인스타그램",
+    title: "Instagram",
     url: "https://www.instagram.com/ingemo_esfutech",
   },
 ];
