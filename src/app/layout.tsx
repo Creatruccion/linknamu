@@ -12,7 +12,14 @@ const pretendard = localFont({
 
 export const metadata: Metadata = {
   title: "감성 ICT 크리에이터 - IngeMo Esfutech",
-  description: "내 모든 링크를 한 페이지에 모아 두고, 하나의 URL로 공유하는 서비스",
+  description: "AI 시대에 필요한 다양한 ICT 관련 노력, 미래, 기술을 이야기 합니다.",
+  // 카카오톡·SNS 등에서 링크 공유 시 미리보기 카드에 표시되는 제목·설명
+  openGraph: {
+    title: "감성 ICT 크리에이터 - IngeMo Esfutech",
+    description: "AI 시대에 필요한 다양한 ICT 관련 노력, 미래, 기술을 이야기 합니다.",
+    type: "website",
+    locale: "ko_KR",
+  },
 };
 
 export const viewport: Viewport = {
