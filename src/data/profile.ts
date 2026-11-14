@@ -8,6 +8,7 @@ export type LinkItem = {
   id: string;
   title: string;
   url: string;
+  emoji?: string;
 };
 
 // 이 파일의 값을 내 정보로 바꾸면 페이지에 바로 반영됩니다.
@@ -19,7 +20,22 @@ export const profile: ProfileData = {
 };
 
 export const links: LinkItem[] = [
-  { id: "github", title: "GitHub", url: "https://github.com" },
-  { id: "naver-blog", title: "Naver Blog", url: "https://blog.naver.com" },
-  { id: "instagram", title: "Instagram", url: "https://www.instagram.com" },
+  {
+    id: "github",
+    emoji: "🐙",
+    title: "깃허브",
+    url: "https://github.com/Creatruccion",
+  },
+  {
+    id: "naver-blog",
+    emoji: "✒️",
+    title: "네이버 블로그",
+    url: "https://m.blog.naver.com/ingemo_technologia",
+  },
+  {
+    id: "instagram",
+    emoji: "😎",
+    title: "인스타그램",
+    url: "https://www.instagram.com/ingemo_esfutech",
+  },
 ];
