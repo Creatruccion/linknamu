@@ -10,14 +10,18 @@ export default function LinkCard({ link }: LinkCardProps) {
       href={link.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block w-full rounded-2xl border-2 border-zinc-900 bg-white px-5 py-4 text-center font-medium transition hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 focus-visible:ring-offset-2 dark:border-zinc-100 dark:bg-zinc-900 dark:focus-visible:ring-zinc-100 dark:focus-visible:ring-offset-black"
+      className="group grid w-full grid-cols-[1.75rem_1fr_1.75rem] items-center gap-2 rounded-[1.25rem] border border-glass-border bg-glass px-5 py-[1.125rem] text-[0.975rem] font-semibold text-ink shadow-[0_6px_24px_-10px_rgba(var(--shadow-tint),0.25)] backdrop-blur-xl transition duration-300 ease-out hover:bg-glass-hover hover:shadow-[0_10px_30px_-10px_rgba(var(--shadow-tint),0.32)] motion-safe:hover:-translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/40 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent active:translate-y-0"
     >
-      {link.emoji && (
-        <span aria-hidden="true" className="mr-2">
-          {link.emoji}
-        </span>
-      )}
-      {link.title}
+      <span aria-hidden="true" className="text-lg leading-none">
+        {link.emoji}
+      </span>
+      <span className="truncate text-center">{link.title}</span>
+      <span
+        aria-hidden="true"
+        className="text-right text-sm text-ink-soft opacity-0 transition duration-300 group-hover:opacity-100 motion-safe:group-hover:translate-x-0.5"
+      >
+        ↗
+      </span>
     </a>
   );
 }
