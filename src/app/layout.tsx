@@ -11,7 +11,7 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "감성ICT 크리에이터 - IngeMo Esfutech",
+  title: "감성 ICT 크리에이터 - IngeMo Esfutech",
   description: "내 모든 링크를 한 페이지에 모아 두고, 하나의 URL로 공유하는 서비스",
 };
 
